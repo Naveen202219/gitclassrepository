@@ -3,6 +3,8 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+# File: azure-pipelines.yml
+
 trigger:
 - main
 
@@ -10,6 +12,5 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo "Hello from Azure Pipeline"
-
-  displayName: 'Run Script'
+- script: echo 'Hello, world! This is my first Azure DevOps pipeline.'
+  displayName: 'Run a one-line script'
